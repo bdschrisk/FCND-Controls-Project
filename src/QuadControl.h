@@ -48,4 +48,14 @@ public:
 
   // integral control
   float integratedAltitudeError;
+	
+	// World model
+	float GRAVITY = 9.81;
+	// Frame properties
+	float frontLeftLength = 4.0;
+	float frontRightLength = 4.0;
+	float backLeftLength = 4.0;
+	float backRightLength = 4.0;
+
+	const V3F MoI = (this->Ixx, this->Iyy, this->Izz);
 };
